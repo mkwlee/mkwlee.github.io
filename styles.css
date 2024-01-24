@@ -1,0 +1,31 @@
+.title_name {
+    font-size: 64px;
+    text-align: center;
+}
+
+.title_page {
+    font-size: 48px;
+    text-align: center;
+}
+
+.section {
+    background-color: #27AAE1;
+    color: white;
+    border: 1px solid white;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+    width: 33%;
+    float: left;
+}
+
+.section_selected {
+    background-color: #2190bf;
+    color: white;
+    border: 1px solid white;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+    width: 33%;
+    float: left;
+}
