@@ -5,11 +5,16 @@
     <title>Matthew Lee</title>
     <link rel='icon' type='image/x-icon' href='assets/images/favicon.ico'>
     <link rel='stylesheet' type='text/css' href='styles.css'>
+    <script src="https://unpkg.com/gsap@3.9.1/dist/gsap.min.js"></script>
 </head>
-<body>
+<body onload='changeContent(contentContainer, 1)'>
     <div class='title_name'>Matthew Lee</div>
-    <a href='projects.html'><div class='section'>Projects</div></a>
-    <a href='experience.html'><div class='section'>Experience</div></a>
-    <a href='about.html'><div class='section'>About Me</div></a>
+    <div id='secProject' class='section' onclick='changeContent(contentContainer, 0)' onmouseover='hoverSecButton(this)' onmouseout='hoverResetSecButton(this)'>Projects</div>
+    <div id='secExperience' class='section' onclick='changeContent(contentContainer, 1)' onmouseover='hoverSecButton(this)' onmouseout='hoverResetSecButton(this)'>Experience</div>
+    <div id='secAbout' class='section' onclick='changeContent(contentContainer, 2)' onmouseover='hoverSecButton(this)' onmouseout='hoverResetSecButton(this)'>About Me</div>
+
+    <object type='text/html' id='contentContainer' width='100%' height='500px' style='opacity:1'></object>
+
+    <script src='script.js'></script>
 </body>
 </html>

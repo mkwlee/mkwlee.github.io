@@ -7,10 +7,50 @@
     <link rel='stylesheet' type='text/css' href='styles.css'>
 </head>
 <body>
-    <div class='title_name'>Matthew Lee</div>
-    <div class='section_selected'>Projects</div>
-    <a href='experience.html'><div class='section'>Experience</div></a>
-    <a href='about.html'><div class='section'>About Me</div></a>
-    <div class='title_page'>Projects</div>
+<!--    <div class='title_page'>Projects</div>-->
+<!--    <div style='background-color: #27AAE1; width: 50%; height: 3px; margin: auto'></div>-->
+
+    <script>
+
+        segments = [];
+        for (var i=0; i < 10; i++) {
+            segments[i] = document.createElement('div');
+            segments[i] .textContent = 'Segment ' + i;
+            var body = document.createElement('div');
+            body.className = 'segment_body';
+            body.textContent = 'Lorem ipsum dolor sit a'
+            if (i % 2 === 0) {
+                segments[i] .className = 'segment_left';
+                var underlineL = document.createElement('div');
+                underlineL.className = 'segment_underline_left';
+                segments[i].appendChild(underlineL);
+                segments[i].appendChild(body)
+            } else {
+                segments[i] .className = 'segment_right';
+                var underlineR = document.createElement('div');
+                underlineR.className = 'segment_underline_right';
+                segments[i].appendChild(underlineR);
+                segments[i].appendChild(body)
+            }
+
+            document.body.appendChild(segments[i]);
+        }
+    </script>
+
+<!--    <div class='segment_left'>-->
+<!--        Project 1-->
+<!--        <div class='segment_underline_left'></div>-->
+<!--&lt;!&ndash;        <div class='segment_title'>Test</div>&ndash;&gt;-->
+<!--        <div class='segment_body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>-->
+<!--    </div>-->
+
+
+<!--    <div class='segment_right'>-->
+<!--        Project 2-->
+<!--        <div style='background-color: #27AAE1; width: 90%; height: 3px; margin-right: 10%'></div>-->
+<!--&lt;!&ndash;        <div class='segment_title'>Test</div>&ndash;&gt;-->
+<!--        <div class='segment_body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>-->
+<!--    </div>-->
+
 </body>
 </html>

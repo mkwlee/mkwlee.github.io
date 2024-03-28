@@ -1,31 +1,88 @@
+@font-face {
+    font-family: 'Harlow';
+    src: url('assets/fonts/harlow.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('assets/fonts/avenir_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .title_name {
-    font-size: 64px;
+    font-size: 128px;
     text-align: center;
+    font-family: 'Harlow', sans-serif;
+    padding-bottom: 10px;
 }
 
 .title_page {
-    font-size: 48px;
+    font-size: 64px;
     text-align: center;
+    font-family: 'Avenir', sans-serif;
+    font-weight: bolder;
 }
 
 .section {
     background-color: #27AAE1;
     color: white;
     border: 1px solid white;
-    font-size: 21px;
+    font-size: 24px;
     text-align: center;
     margin: auto;
     width: 33%;
     float: left;
+    cursor: pointer;
 }
 
-.section_selected {
-    background-color: #2190bf;
-    color: white;
-    border: 1px solid white;
-    font-size: 21px;
-    text-align: center;
-    margin: auto;
-    width: 33%;
-    float: left;
+.segment_left {
+    font-size: 36px;
+    text-align: right;
+    font-family: 'Avenir', sans-serif;
+    font-weight: bold;
+    background-color: #eeeeee;
+    width: 80%;
+    margin-top: 10px;
+    padding-right: 20px;
+    padding-left: 5px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    float:left
+}
+
+.segment_right {
+    font-size: 36px;
+    text-align: left;
+    font-family: 'Avenir', sans-serif;
+    font-weight: bold;
+    background-color: #eeeeee;
+    width: 80%;
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 20px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    float: right;
+}
+
+.segment_underline_left {
+    background-color: #27AAE1;
+    width: 90%;
+    height: 3px;
+    margin-left: 10%
+}
+
+.segment_underline_right {
+    background-color: #27AAE1;
+    width: 90%;
+    height: 3px;
+    margin-right: 10%
+}
+
+.segment_body {
+    font-size: 16px;
+    font-family: 'Avenir', sans-serif;
 }
